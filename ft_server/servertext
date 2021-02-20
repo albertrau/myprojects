@@ -1,0 +1,10 @@
+docker build -t (name) . - сбилдить образ
+docker run -it -p 80:80 -p 443:443 --name (name_cont) (name) - запустить контейнер
+docker rm $(docker ps -aq) - удалить все контейнеры
+docker rmi $(docker images -aq) - удалить все образы
+Docker ps -a 
+docker image -a 
+./autoindex.sh on - включить
+./autoindex.sh off - выключить
+Nginx это движок на котором все работает
+SSL сертификат который позволяет зайти на https без него https протокол не работает 
